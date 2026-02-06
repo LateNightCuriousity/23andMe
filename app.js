@@ -261,7 +261,7 @@
       svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
 
       // USA is represented by many paths with class "United States"
-      const usa = $$(".United\ States", svg);
+      const usa = $$(".United\\ States", svg);
       // Korea is a single path with id "KR"
       const kor = svg.querySelector("#KR");
 
