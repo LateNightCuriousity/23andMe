@@ -675,3 +675,101 @@ h2{font-size:30px}
   line-height: 1.75;
 }
 .note p{margin: 10px 0;}
+
+/* --- Welcome page: more "medical report" cover feel --- */
+
+/* Tighten hero spacing + make it read like a report header */
+#screen-welcome .hero {
+  padding: 22px;
+  gap: 18px;
+  align-items: start;
+}
+
+#screen-welcome h1 {
+  font-size: 44px;
+  line-height: 1.05;
+  margin-bottom: 10px;
+  letter-spacing: -0.03em;
+}
+
+/* Add a subtle “REPORT HEADER” feel above the H1 (no copy changes) */
+#screen-welcome .hero__left h1::before {
+  content: "23 & ME REPORT";
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+/* Make lead + bullets look more like a clinical summary block */
+#screen-welcome .lead {
+  margin: 0 0 14px;
+  max-width: 52ch;
+}
+
+#screen-welcome .bullets {
+  margin: 12px 0 16px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255,255,255,.72);
+}
+
+#screen-welcome .bullet {
+  padding: 8px 6px;
+}
+
+#screen-welcome .bullet__icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 10px;
+}
+
+/* Buttons: slightly more "product report" than "gamey" */
+#screen-welcome .cta-row {
+  margin-top: 10px;
+}
+
+/* Right side: make the bars feel like a watermark, and badge like a specimen label */
+#screen-welcome .hero__right {
+  min-height: 320px;
+}
+
+#screen-welcome .dna {
+  border-style: solid;
+  border-color: rgba(17,24,39,.10);
+  background:
+    radial-gradient(700px 420px at 40% 30%, rgba(31,182,255,.10), transparent 60%),
+    radial-gradient(700px 420px at 70% 80%, rgba(124,58,237,.08), transparent 60%),
+    rgba(255,255,255,.70);
+}
+
+#screen-welcome .dna__strand {
+  opacity: .35;            /* less “random bars”, more “watermark” */
+  height: 1px;
+}
+
+#screen-welcome .hero__badge {
+  width: 240px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.92);
+  border: 1px solid rgba(17,24,39,.12);
+  box-shadow: 0 10px 25px rgba(17,24,39,.08);
+}
+
+#screen-welcome .hero__badgeTop {
+  letter-spacing: .18em;
+  font-weight: 700;
+}
+
+#screen-welcome .hero__badgeBig {
+  font-size: 24px;
+  margin: 6px 0 2px;
+}
+
+#screen-welcome .hero__badgeBottom {
+  color: rgba(91,107,132,.92);
+}
+
