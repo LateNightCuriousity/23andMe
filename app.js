@@ -103,15 +103,16 @@
   ];
 
   function mountScanList() {
-    const mount = $("#scanList");
-    if (!mount) return;
-    mount.innerHTML = scanItems.map((x, i) => `
-      <div class="scanItem" data-scan="${i}">
-        <strong>${x.label}</strong>
-        <span class="scanPill wait">waiting</span>
-      </div>
-    `).join("");
-  }
+  const mount = $("#scanList");
+  if (!mount) return;
+
+  mount.innerHTML = scanItems.map((x, i) =>
+    '<div class="scanItem" data-scan="' + i + '">' +
+      '<strong>' + x.label + '</strong>' +
+      '<span class="scanPill wait">waiting</span>' +
+    '</div>'
+  ).join("");
+}
 
   function mountBits() {
     const bits = $("#seqBits");
