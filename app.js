@@ -174,37 +174,37 @@
       name: "Warmth",
       pct: "99.9%",
       desc: "The kind of presence that makes a room feel safer.",
-      method: "Detected via: spontaneous encouragement, thoughtful check-ins, and the ability to make people feel seen.",
+      method: `Detected via: spontaneous encouragement, thoughtful check-ins, and the ability to make people feel seen.`,
     },
     {
       name: "Humor",
       pct: "98.7%",
       desc: "Laughter arrives early… and stays late.",
-      method: "Detected via: perfectly timed comments, contagious giggles, and comedy that never punches down.",
+      method: `Detected via: perfectly timed comments, contagious giggles, and comedy that never punches down.`,
     },
     {
       name: "Glow",
       pct: "97.2%",
       desc: "Radiance that appears even in low light conditions.",
-      method: "Detected via: high-frequency smiling + the "wait—say that again" effect.",
+      method: `Detected via: high-frequency smiling + the "wait—say that again" effect.`,
     },
     {
       name: "Curiosity",
       pct: "96.4%",
       desc: "Always learning, always noticing the interesting detail.",
-      method: "Detected via: adventurous questions, new ideas, and the “tell me more” reflex.",
+      method: `Detected via: adventurous questions, new ideas, and the “tell me more” reflex.`,
     },
     {
       name: "Loyalty",
       pct: "99.1%",
       desc: "Shows up. Follows through. Remembers the little stuff.",
-      method: "Detected via: consistent care across seasons (and the legendary birthday-remembering subroutine).",
+      method: `Detected via: consistent care across seasons (and the legendary birthday-remembering subroutine).`,
     },
     {
       name: "Icon Energy",
       pct: "100.0%",
       desc: "A rare trait: effortlessly unforgettable.",
-      method: "Detected via: confidence + kindness combo, high style variance, and the "main-character timing" allele.",
+      method: `Detected via: confidence + kindness combo, high style variance, and the "main-character timing" allele.`,
     },
   ];
 
