@@ -8,7 +8,7 @@
     { id: "screen-traits",   label: "Traits" },
     { id: "screen-final",    label: "Final" },
     { id: "screen-map",      label: "Map" },
-    { id: "screen-moon",     label: "Moon" },
+    { id: "screen-moon",     label: "..." },
   ];
 
   const STORAGE_KEY = "hannah23_progress_v1";
@@ -181,31 +181,31 @@
       name: "Humor",
       pct: "98.7%",
       desc: "Laughter arrives early… and stays late.",
-      method: `Detected via: perfectly timed comments, contagious giggles, and comedy that never punches down.`,
+      method: `Detected via: perfectly timed comments and contagious giggles.`,
     },
     {
       name: "Glow",
       pct: "97.2%",
       desc: "Radiance that appears even in low light conditions.",
-      method: `Detected via: high-frequency smiling + the "wait—say that again" effect.`,
+      method: `Detected via: high-frequency smiling.`,
     },
     {
       name: "Curiosity",
       pct: "96.4%",
       desc: "Always learning, always noticing the interesting detail.",
-      method: `Detected via: adventurous questions, new ideas, and the “tell me more” reflex.`,
+      method: `Detected via: adventurous questions, new ideas, the need to spill tea.`,
     },
     {
       name: "Loyalty",
       pct: "99.1%",
       desc: "Shows up. Follows through. Remembers the little stuff.",
-      method: `Detected via: consistent care across seasons (and the legendary birthday-remembering subroutine).`,
+      method: `Detected via: consistent care across seasons.`,
     },
     {
       name: "Icon Energy",
       pct: "100.0%",
       desc: "A rare trait: effortlessly unforgettable.",
-      method: `Detected via: confidence + kindness combo, high style variance, and the "main-character timing" allele.`,
+      method: `Detected via: confidence + kindness combo, high style variance, and baddie alert`,
     },
   ];
 
@@ -340,7 +340,6 @@
     if (!btn) return;
     const ok = !!state.usaConfirmed && !!state.koreaConfirmed;
     btn.disabled = !ok;
-    btn.textContent = ok ? "Go to the moon 🌙" : "Unlock requires USA + Korea";
   }
 
   // --- Wire up global buttons
