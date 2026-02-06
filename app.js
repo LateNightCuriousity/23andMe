@@ -263,13 +263,9 @@
 
       // USA is represented by many paths with class "United States"
 // Robust USA selector (handles most SVG variants)
-const usa = [
-  ...$$("#US", svg),
-  ...$$("#USA", svg),
-  ...$$("#United_States", svg),
-  ...$$("#United\\ States", svg),
-  ...$$('[data-name="United States"]', svg),
-];
+// USA paths have two classes: "United" and "States"
+      const usa = $$(".United.States", svg);
+
       // Korea is a single path with id "KR"
       const kor = svg.querySelector("#KR");
 
